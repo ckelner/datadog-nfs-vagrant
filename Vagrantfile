@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
     # Get the API Key from the host environment
     APIKEY=#{ENV['DD_API_KEY']}
     # NOTE: Change you values below if you want something different
-    TAGS='name:nfs-test, role:nfs-test'
+    TAGS='name:nfs-test, role:nfs-test, kelner:test'
     HOSTNAME='nfs-test'
     # Re-check to see if able to load the DD API Key
     if [[ $APIKEY != "" && ! -z $APIKEY ]]; then
